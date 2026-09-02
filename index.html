@@ -50,16 +50,54 @@
       </nav>
     </header>
     <main>
-        <p class="chemin_acces">Accueil > Chaussure</p>
+        <p class="chemin-acces">Accueil > Chaussure</p>
         <h1 class="titre-principale">Chaussures</h1>
         <p class="texte">12 produits</p>
-        <ul class="filtre-base" aria-label="Filtre principal">
-          <li class="filtre-base__item"><a href="filtre-base__link">Tous</a></li>
-          <li class="filtre-base__item"><a href="filtre-base__link">Homme</a></li>
-          <li class="filtre-base__item"><a href="filtre-base__link">Femme</a></li>
-          <li class="filtre-base__item"><a href="filtre-base__link">Enfants</a></li>
+        <ul class="filtre-haut" aria-label="Filtre principal">
+          <li class="filtre-haut__item"><a href="filtre-haut__link">Tous</a></li>
+          <li class="filtre-haut__item"><a href="filtre-haut__link">Homme</a></li>
+          <li class="filtre-haut__item"><a href="filtre-haut__link">Femme</a></li>
+          <li class="filtre-haut__item"><a href="filtre-haut__link">Enfants</a></li>
         </ul>
-
+        <div class="filtre">
+          <div class="filtre-masquer">
+            <img src="" alt="">
+            <h2>Masquer les filtre</h2>
+          </div>
+          <div class="filtre-trie">
+            <label for="filtre-trie__liste">Trié par </label>
+            <select name="trie" id="filtre-trie__liste">
+              <option value="">Nouveautés</option>
+              <option value="sport">Sport</option>
+              <option value="prix">Prix</option>
+              <option value="couleur">Couleur</option>
+              <option value="pointure">Pointure</option>
+            </select>
+          </div>
+        </div>
+        <fieldset>
+          <legend class="filtre-checkbox">Sport</legend>
+          <div class="filtre-checkbox__item">
+            <input type="checkbox" id="course" name="course" checked />
+            <label for="course">Course</label>
+          </div>
+          <div class="filtre-checkbox__item">
+            <input type="checkbox" id="basketball" name="basketball" />
+            <label for="basketball">Basketball</label>
+          </div>
+          <div class="filtre-checkbox__item">
+            <input type="checkbox" id="football" name="football" />
+            <label for="football">Football</label>
+          </div>
+          <div class="filtre-checkbox__item">
+            <input type="checkbox" id="training" name="training" />
+            <label for="training">Training</label>
+          </div>
+          <div class="filtre-checkbox__item">
+            <input type="checkbox" id="lifestyle" name="lifestyle" />
+            <label for="lifestyle">Lifestyle</label>
+          </div>
+        </fieldset>
     </main>
     <footer>
         <a href="#home" class="nav-menu__link">Fouler</a>
