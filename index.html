@@ -50,15 +50,29 @@
       </nav>
     </header>
     <main>
-        <p class="chemin-acces">Accueil > Chaussure</p>
+        <p class="chemin-acces"> <a href="#">Accueil</a> > Chaussure</p>
         <h1 class="titre-principale">Chaussures</h1>
         <p class="texte">12 produits</p>
-        <ul class="filtre-haut" aria-label="Filtre principal">
-          <li class="filtre-haut__item"><a href="filtre-haut__link">Tous</a></li>
-          <li class="filtre-haut__item"><a href="filtre-haut__link">Homme</a></li>
-          <li class="filtre-haut__item"><a href="filtre-haut__link">Femme</a></li>
-          <li class="filtre-haut__item"><a href="filtre-haut__link">Enfants</a></li>
-        </ul>
+        <fieldset class="filtre-haut">
+          <ul class="filtre-haut__list">
+            <li class="filtre-haut__item">
+              <input class="screen-reader-only" type="radio" id="tous" name="gender"/>
+              <label for="tous">Tous</label>
+            </li>
+            <li class="filtre-haut__item">
+              <input class="screen-reader-only" type="radio" id="hommes" name="gender" />
+              <label for="hommes">Hommes</label>
+            </li>
+            <li class="filtre-haut__item">
+              <input class="screen-reader-only" type="radio" id="femmes" name="gender" />
+              <label for="femmes">Femmes</label>
+            </li>
+            <li class="filtre-haut__item">
+              <input class="screen-reader-only" type="radio" id="enfants" name="gender" />
+              <label for="enfants">Enfant</label>
+            </li>
+          </ul>
+        </fieldset>
         <div class="filtre">
           <div class="filtre-masquer">
             <img src="" alt="">
