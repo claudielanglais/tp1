@@ -1,5 +1,11 @@
 /* VARIABLES */
 
 :root {
-  --couleur-principale: rgb(62, 3, 118);
+  --couleur-texte-un: #0F1827;
+  --couleur-texte-deux: #354052;
+  --couleur-texte-trois: #AAAAAA;
+  --couleur-background: #F5F5F5;
+  --couleur-border: #D9D9D9;
+  --couleur-noire: #000000;
+  --couleur-bleu: #0090CF;
 }
