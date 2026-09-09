@@ -23,6 +23,62 @@
 /* @import url("css/components/modale.css") layer(components); */
 
 /* Temporaire - Pour tester une variable définie dans les settings */
-h1 {
-  color: var(--couleur-principale);
+.screen-reader-only,
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus,
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+main {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.chemin-acces {
+  color: var(--couleur-texte-trois);
+  font-size: 0.8rem;
+}
+.titre-principale {
+  color: var(--couleur-texte-un);
+  font-size: 3.438rem;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.filtre-haut {
+  border: none;
+  margin: -10px 0 -40px -52px;
+}
+.filtre-haut__list {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  list-style: none;
+}
+.filtre-haut__item input[type="radio"] ~ label {
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--couleur-noire);
+  padding: 10px;
+  border: var(--couleur-border) 1px solid;
+}
+.filtre-haut__item input[type="radio"]:checked ~ label{
+  color: var(--couleur-background);
+  background-color: var(--couleur-noire);
 }
