@@ -126,5 +126,55 @@ main {
   padding-top: 15px;
   text-transform: uppercase;
 }
+/*Section Article*/
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 
+}
+.article-item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: var( --couleur-blanc);
+  padding: 20px 20px 0 20px;
+}
+.article-item p,
+.article-item h3 {
+  margin-bottom: -5px;
+}
+.article-item__nouveau {
+  color: var(--couleur-blanc);
+  background-color: var(--couleur-noire);
+  position: absolute;
+  padding: 5px;
+}
+.article-item__sexe {
+  color: var(--couleur-bleu);
+}
+.article-item__nom {
+  font-weight: bold;
+}
+.article-item__nbcouleur {
+  color: var(--couleur-texte-trois);
+}
+.article-item__prix {
+  padding-bottom: 20px;
+}
+.article-item__panier {
+  margin-left:-20px;
+  margin-right: -20px;
+  color: var(--couleur-texte-trois);
+  border: solid 1px var(--couleur-border);
+  padding: 10px;
+  text-decoration: none;
+  align-items: stretch;
+  text-align: center;
+}
+.article-item__panier:hover {
+  color: var(--couleur-blanc);
+  border: solid 1px var(--couleur-border);
+  background-color: var(--couleur-bleu);
+}
 
