@@ -48,6 +48,9 @@
     position: static;
     width: auto;
 }
+body {
+  background-color: var(--couleur-background);
+}
 /*Section du haut (titre)*/
 main {
   margin-left: 40px;
@@ -79,9 +82,10 @@ main {
   color: var(--couleur-noire);
   padding: 10px;
   border: var(--couleur-border) 1px solid;
+  background-color: var(--couleur-blanc);
 }
 .filtre-haut__item input[type="radio"]:checked ~ label{
-  color: var(--couleur-background);
+  color: var(--couleur-blanc);
   background-color: var(--couleur-noire);
 }
 
