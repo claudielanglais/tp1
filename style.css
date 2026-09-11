@@ -116,7 +116,7 @@ main {
 .filtre-section {
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
+  gap:50px;
 }
 .fieldset-sport,
 .fieldset-prix,
@@ -132,10 +132,10 @@ main {
 }
 /*Section Article*/
 .article {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
-
 }
 .article-item {
   display: flex;
