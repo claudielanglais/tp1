@@ -23,6 +23,8 @@
 /* @import url("css/components/modale.css") layer(components); */
 
 /* Temporaire - Pour tester une variable définie dans les settings */
+
+/*Screen reader only*/
 .screen-reader-only,
 .visually-hidden {
     border: 0;
@@ -46,7 +48,7 @@
     position: static;
     width: auto;
 }
-
+/*Section du haut (titre)*/
 main {
   margin-left: 40px;
   margin-right: 40px;
@@ -106,3 +108,23 @@ main {
   max-width: 20px;
   max-height: 20px;
 }
+/*Section filtre coté (filtre précis)*/
+.filtre-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+.fieldset-sport,
+.fieldset-prix,
+.fieldset-couleur,
+.fieldset-pointure {
+  border: none;
+  border-bottom: solid 1px var(--couleur-border);
+  width: 250px;
+}
+.filtre-checkbox {
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+
