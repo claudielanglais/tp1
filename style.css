@@ -68,7 +68,7 @@ main {
 }
 .filtre-haut {
   border: none;
-  margin: -10px 0 0 -52px;
+  margin: 30px 0 30px -40px;
 }
 .filtre-haut__list {
   display: flex;
@@ -76,7 +76,7 @@ main {
   border: none;
   list-style: none;
 }
-.filtre-haut__item input[type="radio"] ~ label {
+.filtre-haut__lien {
   margin-right: 10px;
   text-decoration: none;
   color: var(--couleur-noire);
@@ -84,7 +84,6 @@ main {
   border: var(--couleur-border) 1px solid;
   background-color: var(--couleur-blanc);
 }
-.filtre-haut__item input[type="radio"]:checked ~ label{
   color: var(--couleur-blanc);
   background-color: var(--couleur-noire);
 }
