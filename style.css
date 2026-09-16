@@ -116,6 +116,10 @@ main {
   display: flex;
   flex-direction: row;
   gap:50px;
+  margin-top: 10px;
+}
+.filtre-precis {
+  padding-top: 15px;
 }
 .fieldset-sport,
 .fieldset-prix,
@@ -129,6 +133,9 @@ main {
   padding-top: 15px;
   text-transform: uppercase;
 }
+.filtre-checkbox__item {
+  padding-bottom: 5px;
+}
 /*Section Article*/
 .article {
   display: flex;
@@ -141,18 +148,33 @@ main {
   flex-direction: column;
   width: 250px;
   background-color: var( --couleur-blanc);
-  padding: 20px 20px 0 20px;
 }
 .article-item p,
 .article-item h3 {
   margin-bottom: -5px;
 }
+.article-item__nouveau,
+.article-item__sexe,
+.article-item__nom,
+.article-item__nbcouleur,
+.article-item__prix {
+  padding-left: 20px;
+}
 .article-item__nouveau {
+  opacity: 0;
+  position: absolute;
+}
+.article .article-item:nth-of-type(1) .article-item__nouveau,
+.article .article-item:nth-of-type(6) .article-item__nouveau,
+.article .article-item:nth-of-type(7) .article-item__nouveau,
+.article .article-item:nth-of-type(9) .article-item__nouveau,
+.article .article-item:nth-of-type(12) .article-item__nouveau{
+  opacity: 1;
   color: var(--couleur-blanc);
   background-color: var(--couleur-noire);
-  position: absolute;
   padding: 5px;
 }
+
 .article-item__sexe {
   color: var(--couleur-bleu);
 }
@@ -166,8 +188,6 @@ main {
   padding-bottom: 20px;
 }
 .article-item__panier {
-  margin-left:-20px;
-  margin-right: -20px;
   color: var(--couleur-texte-trois);
   border: solid 1px var(--couleur-border);
   padding: 10px;
@@ -180,7 +200,6 @@ main {
   border: solid 1px var(--couleur-border);
   background-color: var(--couleur-bleu);
 }
-
 /*Section pagination article*/
 .pagination-list {
   display: flex;
