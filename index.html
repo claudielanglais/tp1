@@ -53,26 +53,22 @@
         <p class="chemin-acces"> <a href="#">Accueil</a> > Chaussure</p>
         <h1 class="titre-principale">Chaussures</h1>
         <p class="texte">12 produits</p>
-        <fieldset class="filtre-haut">
+        <div class="filtre-haut">
           <ul class="filtre-haut__list">
             <li class="filtre-haut__item">
-              <input class="screen-reader-only" type="radio" id="tous" name="gender"/>
-              <label for="tous">Tous</label>
+              <a class="filtre-haut__lien" href="">Tous</a>
             </li>
             <li class="filtre-haut__item">
-              <input class="screen-reader-only" type="radio" id="hommes" name="gender" />
-              <label for="hommes">Hommes</label>
+              <a class="filtre-haut__lien" href="">Hommes</a>
             </li>
             <li class="filtre-haut__item">
-              <input class="screen-reader-only" type="radio" id="femmes" name="gender" />
-              <label for="femmes">Femmes</label>
+              <a class="filtre-haut__lien" href="">Femmes</a>
             </li>
             <li class="filtre-haut__item">
-              <input class="screen-reader-only" type="radio" id="enfants" name="gender" />
-              <label for="enfants">Enfant</label>
+              <a class="filtre-haut__lien" href="">Enfants</a>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="filtre">
           <div class="filtre-masquer">
             <img class="filtre-masquer__icone" src="icones/Icone_masquer_filtre.svg" alt="">
@@ -315,12 +311,22 @@
             </div>
           </div> 
         </div>
-          <ul>
-            <li><a href="#">&lt</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">></a></li>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-lien" href="">&lt</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-lien" href="">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-lien" href="">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-lien" href="">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-lien" href="">></a>
+            </li>
           </ul>
        
     </main>
