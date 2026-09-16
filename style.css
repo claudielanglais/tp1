@@ -84,6 +84,8 @@ main {
   border: var(--couleur-border) 1px solid;
   background-color: var(--couleur-blanc);
 }
+.filtre-haut__lien:hover,
+.filtre-haut__lien:active {
   color: var(--couleur-blanc);
   background-color: var(--couleur-noire);
 }
