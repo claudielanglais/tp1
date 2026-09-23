@@ -299,6 +299,7 @@ main {
 .article-item__panier {
   color: var(--couleur-texte-trois);
   border: solid 1px var(--couleur-border);
+  background-color: var(--couleur-blanc);
   padding: 10px;
   text-decoration: none;
   align-items: stretch;
@@ -311,6 +312,52 @@ main {
   color: var(--couleur-blanc);
   border: solid 1px var(--couleur-border);
   background-color: var(--couleur-bleu);
+}
+/*Article Popup*/
+.article__popover::backdrop {
+    background-color: black;
+    opacity: 0.5;
+}
+.popover-popup {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.popup-panier {
+  color: var(--couleur-texte-un);
+  border-bottom: solid 1px var(--couleur-border);
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -10px;
+}
+.popup__image {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.popup__image .article-item__img {
+  width: 150px;
+  height: 150px;
+}
+.popup-lien {
+  color: var(--couleur-texte-un);
+  border: solid 1px var(--couleur-border);
+  padding: 10px;
+  text-decoration: none;
+  align-items: stretch;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.popup-lien:hover {
+  color: var(--couleur-blanc);
+  background-color: var(--couleur-noire);
 }
 /*Section pagination article*/
 .pagination-list {
