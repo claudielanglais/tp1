@@ -23,6 +23,8 @@
 /* @import url("css/components/modale.css") layer(components); */
 
 /* Temporaire - Pour tester une variable définie dans les settings */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*Screen reader only*/
 .screen-reader-only,
@@ -50,6 +52,14 @@
 }
 body {
   background-color: var(--couleur-background);
+  font-family: "Barlow", sans-serif;
+}
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight:900;
+}
+/*Navigation/Menu*/
 header {
  padding-left: 40px;
   padding-right: 40px;
@@ -67,6 +77,7 @@ header {
   text-transform: uppercase;
 }
 .nav-accueil { 
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
@@ -144,6 +155,8 @@ main {
 .filtre-haut__lien {
   margin-right: 10px;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
   color: var(--couleur-noire);
   padding: 10px;
   border: var(--couleur-border) 1px solid;
@@ -164,6 +177,7 @@ main {
   padding: 20px 40px 20px 40px;
   border-top: solid 1px var(--couleur-border);
   border-bottom: solid 1px var(--couleur-border);
+  background-color: var(--couleur-blanc);
 }
 .filtre-masquer {
   display:flex;
@@ -247,6 +261,7 @@ main {
 .article-item__nouveau {
   opacity: 0;
   position: absolute;
+ 
 }
 .article .article-item:nth-of-type(1) .article-item__nouveau,
 .article .article-item:nth-of-type(6) .article-item__nouveau,
@@ -256,20 +271,29 @@ main {
   opacity: 1;
   color: var(--couleur-blanc);
   background-color: var(--couleur-noire);
-  padding: 5px;
+  padding: 7px; 
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .article-item__sexe {
   color: var(--couleur-bleu);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 .article-item__nom {
   font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.3rem;
 }
 .article-item__nbcouleur {
   color: var(--couleur-texte-trois);
 }
 .article-item__prix {
   padding-bottom: 20px;
+  font-weight: bold;
 }
 .article-item__panier {
   color: var(--couleur-texte-trois);
@@ -278,6 +302,9 @@ main {
   text-decoration: none;
   align-items: stretch;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 .article-item__panier:hover {
   color: var(--couleur-blanc);
