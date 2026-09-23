@@ -2,7 +2,7 @@
 
 @layer components {
   /* 1. ARCHITECTURE DESKTOP */
-  .nav-menu {
+  /* .nav-menu {
     --nav-bg: #ffffff;
     --nav-text: #020263;
     --nav-accent: #0066cc;
@@ -39,12 +39,12 @@
       }
 
       /* WCAG Accessibilité : Indicateur de focus clavier personnalisé et très visible */
-      &:focus-visible {
+      /* &:focus-visible {
         outline: 3px solid var(--nav-focus-ring);
         outline-offset: 2px;
         color: var(--nav-accent);
-      }
-    }
+      } */
+    } 
 
     /* Le bouton de contrôle (Masqué sur grand écran) */
     .nav-menu__toggle {
