@@ -61,7 +61,7 @@ h1 {
 }
 /*Navigation/Menu*/
 header {
- padding-left: 40px;
+  padding-left: 40px;
   padding-right: 40px;
   background-color: var(--couleur-noire);
 }
@@ -95,6 +95,7 @@ header {
   color: var(--couleur-blanc);
   text-decoration: none;
   font-size: small;
+  text-transform: uppercase;
 }
 .nav-accueil:hover,
 .nav-accueil:active,
@@ -338,4 +339,40 @@ main {
     justify-content: flex-end;
     margin-right: 31.5%;
   }
+}
+/*Pied de page*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  padding: 40px;
+  background-color: #2A2A2A;
+  color: var(--couleur-blanc);
+}
+.nav-menu__pied {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  margin-top: 0px;
+}
+.nav-media {
+  margin-top: 0px;
+}
+.nav-pied__texte {
+  font-size: 0.7rem;
+  color: var(--couleur-texte-trois);
+}
+.nav-menu .nav-pied__texte {
+  padding-left: 40px;
+}
+.nav-media {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.nav-media__item {
+  list-style: none;
 }
