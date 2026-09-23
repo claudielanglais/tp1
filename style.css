@@ -170,13 +170,23 @@ main {
   flex-direction: row;
 }
 .filtre-masquer__texte {
-  margin-top: -3px;
+  margin-top: 0px;
   margin-bottom: -10px;
   padding-left: 5px;
 }
 .filtre-masquer__icone {
+  margin-top: 5px;
   max-width: 20px;
   max-height: 20px;
+}
+.filtre-trie label {
+  color: var(--couleur-texte-trois);
+  padding-right: 10px;
+}
+.filtre-trie select {
+  border: solid 1px var(--couleur-border);
+  padding: 5px;
+  color: var(--couleur-texte-un)
 }
 /*Section filtre coté (filtre précis)*/
 .filtre-section {
@@ -199,6 +209,13 @@ main {
 .filtre-checkbox {
   padding-top: 15px;
   text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filtre-checkbox p {
+  margin-top: 0px;
 }
 .filtre-checkbox__item {
   padding-bottom: 5px;
