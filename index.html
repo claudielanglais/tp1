@@ -10,49 +10,50 @@
     <body>
     <a href="#main" class="screen-reader-only focusable skip-link">Aller au contenu</a>
     <header>
-      <nav class="nav-menu" aria-label="Navigation principale">
-        <!-- Bouton Menu / Fermer -->
-        <button
-          class="nav-menu__toggle"
-          aria-expanded="false"
-          aria-controls="nav-menu-list"
-          aria-label="Ouvrir le menu de navigation"
-        >
-          <!-- L'icône doit être positionnée en premier pour le sélecteur CSS adjacent (+) -->
-          <span class="nav-menu__hamburger-icon" aria-hidden="true"></span>
-          <span class="nav-menu__libelle">Menu</span>
-        </button>
+      <div class="nav-menu__genre">
+      <a href="#home" class="nav-accueil">Foulée</a>
+        <nav class="nav-menu" aria-label="Navigation principale">
+          <!-- Bouton Menu / Fermer -->
+          <button
+            class="nav-menu__toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu-list"
+            aria-label="Ouvrir le menu de navigation"
+          >
+            <!-- L'icône doit être positionnée en premier pour le sélecteur CSS adjacent (+) -->
+            <span class="nav-menu__hamburger-icon" aria-hidden="true"></span>
+            <span class="nav-menu__libelle">Menu</span>
+          </button>
 
-        <!-- Liste des liens de navigation -->
-        <div class="nav-menu__genre">
-          <a href="#home" class="nav-accueil">Foulée</a>
-          <ul id="nav-menu-list" class="nav-menu__list">
-            <li class="nav-menu__item">
-              <a href="#hommes" class="nav-menu__link">Hommes</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#femmes" class="nav-menu__link">Femmes</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#enfants" class="nav-menu__link">Enfants</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#sport" class="nav-menu__link">Sport</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#personnaliser" class="nav-menu__link">Personnaliser</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="#fouler+" class="nav-menu__link">Fouler+</a>
-            </li>
-          </ul>
-          <div class="nav-menu__recherche">
-            <input class="nav-menu__rechercher" id="recherche" name="recherche" type="text" placeholder="Rechercher"/>
-            <img class="nav-menu__panier" src="icones/Panier.png" alt="Panier">
-          </div>
+          <!-- Liste des liens de navigation -->
+          
+            <ul id="nav-menu-list" class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="#hommes" class="nav-menu__link">Hommes</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#femmes" class="nav-menu__link">Femmes</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#enfants" class="nav-menu__link">Enfants</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#sport" class="nav-menu__link">Sport</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#personnaliser" class="nav-menu__link">Personnaliser</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="#fouler+" class="nav-menu__link">Fouler+</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="nav-menu__recherche">
+          <input class="nav-menu__rechercher" id="recherche" name="recherche" type="text" placeholder="Rechercher"/>
+          <img class="nav-menu__panier" src="icones/Panier.png" alt="Panier">
         </div>
-
-      </nav>
+      </div>
+      
     </header>
     <main>
         <p class="chemin-acces"> <a href="#">Accueil</a> > Chaussure</p>
@@ -77,7 +78,7 @@
         <div class="filtre">
           <div class="filtre-masquer">
             <img class="filtre-masquer__icone" src="icones/Icone_masquer_filtre.svg" alt="">
-            <h2 class="filtre-masquer__texte">Masquer les filtre</h2>
+            <a href="" class="filtre-masquer__lien">Masquer les filtres</a>
           </div>
           <div class="filtre-trie">
             <label for="filtre-trie__liste">Trié par </label>
@@ -94,7 +95,7 @@
           <div class="filtre-precis">
             <fieldset class="fieldset-sport">
               <div class="filtre-checkbox">
-                <legend >Sport</legend>
+                <p>Sport</p>
                 <p>-</p>
               </div>
               <div class="filtre-checkbox__item">
@@ -120,7 +121,7 @@
             </fieldset>
             <fieldset class="fieldset-prix">
               <div class="filtre-checkbox">
-                <legend >Prix</legend>
+                <p >Prix</p>
                 <p>-</p>
               </div>
               <div class="filtre-checkbox__item">
@@ -142,7 +143,7 @@
             </fieldset>
             <fieldset class="fieldset-couleur">
               <div class="filtre-checkbox">
-                <legend >Couleur</legend>
+                <p >Couleur</p>
                 <p>-</p>
               </div>
               <div class="filtre-checkbox__item">
@@ -172,7 +173,7 @@
             </fieldset>
             <fieldset class="fieldset-pointure">
               <div class="filtre-checkbox">
-                <legend >Pointure</legend>
+                <p >Pointure</p>
                 <p>-</p>
               </div>
               <div class="filtre-checkbox__item">
@@ -222,7 +223,7 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirForceFlynit_01_w502.jpg" alt="AirForceFlynit pour homme">
               <p class="article-item__sexe">Hommes</p>
-              <h3 class="article-item__nom">Air Force Flyknit</h3>
+              <h2 class="article-item__nom">Air Force Flyknit</h2>
               <p class="article-item__nbcouleur">3 couleurs</p>
               <p class="article-item__prix">$129,99</p>
               <button class="article-item__panier" popovertarget="AirForceFlyknit"><span>Ajouter au panier</span></button>
@@ -233,7 +234,7 @@
                     <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirForceFlynit_01_w502.jpg" alt="AirForceFlynit pour homme">
                     <div class="popup__texte">
                       <p class="article-item__sexe">Hommes</p>
-                      <h3 class="article-item__nom">Air Force Flyknit</h3>
+                      <h2 class="article-item__nom">Air Force Flyknit</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$129,99</p>
@@ -248,18 +249,18 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/wom_AirForceMidLeather_01_w502.jpg" alt="AirForceMidLeather pour femme">
               <p class="article-item__sexe">Femmes</p>
-              <h3 class="article-item__nom">Air force mid leather</h3>
+              <h2 class="article-item__nom">Air force mid leather</h2>
               <p class="article-item__nbcouleur">4 couleurs</p>
               <p class="article-item__prix">$109,99</p>
-              <button class="article-item__panier" popovertarget="Air force mid leather"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Air force mid leather">
+              <button class="article-item__panier" popovertarget="Airforcemidleather"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="Airforcemidleather">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                     <img class="article-item__img" src="Images/TP1_RWD_optim/wom_AirForceMidLeather_01_w502.jpg" alt="AirForceMidLeather pour femme">
                     <div class="popup__texte">
                       <p class="article-item__sexe">Femmes</p>
-                      <h3 class="article-item__nom">Air force mid leather</h3>
+                      <h2 class="article-item__nom">Air force mid leather</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$109,99</p>
@@ -274,18 +275,18 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirJordanRetroDecon_01_w502.jpg" alt="AirJordanRetroDecon pour homme">
               <p class="article-item__sexe">Hommes</p>
-              <h3 class="article-item__nom">Air Jordan Retro Decon</h3>
+              <h2 class="article-item__nom">Air Jordan Retro Decon</h2>
               <p class="article-item__nbcouleur">5 couleurs</p>
               <p class="article-item__prix">$189,99</p>
-              <button class="article-item__panier" popovertarget="Air Jordan Retro Decon"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Air Jordan Retro Decon">
+              <button class="article-item__panier" popovertarget="AirJordanRetroDecon"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="AirJordanRetroDecon">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                     <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirJordanRetroDecon_01_w502.jpg" alt="AirJordanRetroDecon pour homme">
                     <div class="popup__texte">
                       <p class="article-item__sexe">Hommes</p>
-                      <h3 class="article-item__nom">Air Jordan Retro Decon</h3>
+                      <h2 class="article-item__nom">Air Jordan Retro Decon</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$189,99</p>
@@ -300,17 +301,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirVortex01_w502.jpg" alt="AirVortex pour homme">
               <p class="article-item__sexe">Hommes</p>
-              <h3 class="article-item__nom">Air Vortex</h3>
+              <h2 class="article-item__nom">Air Vortex</h2>
               <p class="article-item__nbcouleur">3 couleurs</p>
               <p class="article-item__prix">$99,99</p>
-              <button class="article-item__panier" popovertarget="Air Vortex"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Air Vortex">
+              <button class="article-item__panier" popovertarget="AirVortex"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="AirVortex">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                       <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirVortex01_w502.jpg" alt="AirVortex pour homme">                    <div class="popup__texte">
                       <p class="article-item__sexe">Hommes</p>
-                      <h3 class="article-item__nom">Air Vortex</h3>
+                      <h2 class="article-item__nom">Air Vortex</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$99,99</p>
@@ -325,17 +326,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/men_CourtBoroughMid_01_w502.jpg" alt="CourtBoroughMid pour homme">
               <p class="article-item__sexe">Hommes</p>
-              <h3 class="article-item__nom">Court Borough Mid</h3>
+              <h2 class="article-item__nom">Court Borough Mid</h2>
               <p class="article-item__nbcouleur">4 couleurs</p>
               <p class="article-item__prix">$79,99</p>
-              <button class="article-item__panier" popovertarget="Court Borough Mid"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Court Borough Mid">
+              <button class="article-item__panier" popovertarget="CourtBoroughMid"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="CourtBoroughMid">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                       <img class="article-item__img" src="Images/TP1_RWD_optim/men_CourtBoroughMid_01_w502.jpg" alt="CourtBoroughMid pour homme"> <div class="popup__texte">
                       <p class="article-item__sexe">Hommes</p>
-                      <h3 class="article-item__nom">Court Borough Mid</h3>
+                      <h2 class="article-item__nom">Court Borough Mid</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$79,99</p>
@@ -350,17 +351,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/wom_ClassicCortezNylonB_01_w502.jpg" alt="ClassicCortezNylonB pour femme">
               <p class="article-item__sexe">Femmes</p>
-              <h3 class="article-item__nom">Classic Cortez Nylon B</h3>
+              <h2 class="article-item__nom">Classic Cortez Nylon B</h2>
               <p class="article-item__nbcouleur">2 couleurs</p>
               <p class="article-item__prix">$89,99</p>
-              <button class="article-item__panier" popovertarget="Classic Cortez Nylon B"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Classic Cortez Nylon B">
+              <button class="article-item__panier" popovertarget="ClassicCortezNylonB"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="ClassicCortezNylonB">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                     <img class="article-item__img" src="Images/TP1_RWD_optim/wom_ClassicCortezNylonB_01_w502.jpg" alt="ClassicCortezNylonB pour femme"> <div class="popup__texte">
                       <p class="article-item__sexe">Femmes</p>
-                      <h3 class="article-item__nom">Classic Cortez Nylon B</h3>
+                      <h2 class="article-item__nom">Classic Cortez Nylon B</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$89,99</p>
@@ -375,17 +376,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirMaxUltraMoire_01_w502.jpg" alt="AirMaxUltraMoire pour homme">
               <p class="article-item__sexe">Hommes</p>
-              <h3 class="article-item__nom">Air Max Ultra Moire</h3>
+              <h2 class="article-item__nom">Air Max Ultra Moire</h2>
               <p class="article-item__nbcouleur">4 couleurs</p>
               <p class="article-item__prix">$149,99</p>
-              <button class="article-item__panier" popovertarget="Air Max Ultra Moire"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Air Max Ultra Moire">
+              <button class="article-item__panier" popovertarget="AirMaxUltraMoire"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="AirMaxUltraMoire">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                      <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirMaxUltraMoire_01_w502.jpg" alt="AirMaxUltraMoire pour homme"> <div class="popup__texte">
                       <p class="article-item__sexe">Hommes</p>
-                      <h3 class="article-item__nom">Air Max Ultra Moire</h3>
+                      <h2 class="article-item__nom">Air Max Ultra Moire</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$149,99</p>
@@ -400,17 +401,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirMaxSc_02_w502.jpg" alt="AirMaxSc pour homme">
               <p class="article-item__sexe">Femmes</p>
-              <h3 class="article-item__nom">Air Max Zero</h3>
+              <h2 class="article-item__nom">Air Max Zero</h2>
               <p class="article-item__nbcouleur">6 couleurs</p>
               <p class="article-item__prix">$119,99</p>
-              <button class="article-item__panier" popovertarget="Air Max Zero"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Air Max Zero">
+              <button class="article-item__panier" popovertarget="AirMaxZero"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="AirMaxZero">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                      <img class="article-item__img" src="Images/TP1_RWD_optim/men_AirMaxSc_02_w502.jpg" alt="AirMaxSc pour homme"> <div class="popup__texte">
                       <p class="article-item__sexe">Femmes</p>
-                      <h3 class="article-item__nom">Air Max Zero</h3>
+                      <h2 class="article-item__nom">Air Max Zero</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$119,99</p>
@@ -425,17 +426,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/wom_BlazerLowLX_01_w502.jpg" alt="BlazerLowLX pour femme">
               <p class="article-item__sexe">Femmes</p>
-              <h3 class="article-item__nom">Blazer Low LX</h3>
+              <h2 class="article-item__nom">Blazer Low LX</h2>
               <p class="article-item__nbcouleur">3 couleurs</p>
               <p class="article-item__prix">$109,99</p>
-              <button class="article-item__panier" popovertarget="Blazer Low LX"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Blazer Low LX">
+              <button class="article-item__panier" popovertarget="BlazerLowLX"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="BlazerLowLX">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                      <img class="article-item__img" src="Images/TP1_RWD_optim/wom_BlazerLowLX_01_w502.jpg" alt="BlazerLowLX pour femme"> <div class="popup__texte">
                       <p class="article-item__sexe">Femmes</p>
-                      <h3 class="article-item__nom">Blazer Low LX</h3>
+                      <h2 class="article-item__nom">Blazer Low LX</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$109,99</p>
@@ -450,17 +451,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/men_CortezUltraMoire_01_w502.jpg" alt="CortezUltraMoire pour homme">
               <p class="article-item__sexe">Hommes</p>
-              <h3 class="article-item__nom">Cortez Ultra Moire</h3>
+              <h2 class="article-item__nom">Cortez Ultra Moire</h2>
               <p class="article-item__nbcouleur">5 couleurs</p>
               <p class="article-item__prix">$99,99</p>
-              <button class="article-item__panier" popovertarget="Cortez Ultra Moire"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Cortez Ultra Moire">
+              <button class="article-item__panier" popovertarget="CortezUltraMoire"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="CortezUltraMoire">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                      <img class="article-item__img" src="Images/TP1_RWD_optim/men_CortezUltraMoire_01_w502.jpg" alt="CortezUltraMoire pour homme"> <div class="popup__texte">
                       <p class="article-item__sexe">Hommes</p>
-                      <h3 class="article-item__nom">Cortez Ultra Moire</h3>
+                      <h2 class="article-item__nom">Cortez Ultra Moire</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$99,99</p>
@@ -475,17 +476,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/wom_FlexSupremeTR5a_01_w502.jpg" alt="FlexSupremeTR5 pour femme">
               <p class="article-item__sexe">Femmes</p>
-              <h3 class="article-item__nom">Flex Supreme TR 5B</h3>
+              <h2 class="article-item__nom">Flex Supreme TR 5B</h2>
               <p class="article-item__nbcouleur">3 couleurs</p>
               <p class="article-item__prix">$89,99</p>
-              <button class="article-item__panier" popovertarget="Flex Supreme TR 5B"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Flex Supreme TR 5B">
+              <button class="article-item__panier" popovertarget="FlexSupremeTR5B"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="FlexSupremeTR5B">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                      <img class="article-item__img" src="Images/TP1_RWD_optim/wom_FlexSupremeTR5a_01_w502.jpg" alt="FlexSupremeTR5 pour femme"> <div class="popup__texte">
                       <p class="article-item__sexe">Femmes</p>
-                      <h3 class="article-item__nom">Flex Supreme TR 5B</h3>
+                      <h2 class="article-item__nom">Flex Supreme TR 5B</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$89,99</p>
@@ -500,17 +501,17 @@
               <p class="article-item__nouveau">Nouveau</p>
               <img class="article-item__img" src="Images/TP1_RWD_optim/wom_LunarChargeEssential_01_w502.jpg" alt="LunarChargeEssential pour femme">
               <p class="article-item__sexe">Femmes</p>
-              <h3 class="article-item__nom">Lunar Charge Essential</h3>
+              <h2 class="article-item__nom">Lunar Charge Essential</h2>
               <p class="article-item__nbcouleur">4 couleurs</p>
               <p class="article-item__prix">$119,99</p>
-              <button class="article-item__panier" popovertarget="Lunar Charge Essential"><span>Ajouter au panier</span></button>
-              <div popover class="article__popover" id="Lunar Charge Essential">
+              <button class="article-item__panier" popovertarget="LunarChargeEssential"><span>Ajouter au panier</span></button>
+              <div popover class="article__popover" id="LunarChargeEssential">
                 <div class="popover-popup">
                   <p class="popup-panier">Article ajouté au panier</p>
                   <div class="popup__image">
                      <img class="article-item__img" src="Images/TP1_RWD_optim/wom_LunarChargeEssential_01_w502.jpg" alt="LunarChargeEssential pour femme"> <div class="popup__texte">
                       <p class="article-item__sexe">Femmes</p>
-                      <h3 class="article-item__nom">Lunar Charge Essential</h3>
+                      <h2 class="article-item__nom">Lunar Charge Essential</h2>
                       <p class="article-item__nbcouleur">Pointure: 42</p>
                       <p class="article-item__nbcouleur">Quantité: 1</p>
                       <p class="article-item__prix">$119,99</p>
@@ -525,7 +526,7 @@
         </div>
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-lien" href="">&lt</a>
+              <a class="pagination-lien" href="">&lt;</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-lien" href="">1</a>
@@ -547,7 +548,7 @@
         <a href="#home" class="nav-accueil">Fouler</a>
         <p class="nav-pied__texte">© 2017 FOULÉÉ. Tous droits réservés 2017</p>
       </div>
-      <div class="nav-menu">
+      <div class="nav-menu-footer">
         <nav class="nav-menu-pied" aria-label="Navigation bas de page">
             <ul class="nav-menu__pied">
                 <li class="nav-menu__item">
