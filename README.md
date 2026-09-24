@@ -28,8 +28,8 @@ Les utilisateurs doivent être capables de :
 
 ### Liens
 
-- URL de la solution : [Lien vers mon dépôt GitHub](https://github.com)
-- URL du site en direct : [Lien vers GitHub Pages](https://github.io)
+- URL de la solution : [https://github.com/claudielanglais/tp1](https://github.com/claudielanglais/tp1)
+- URL du site en direct : [https://claudielanglais.github.io/tp1/](https://claudielanglais.github.io/tp1/)
 
 ## Mon Processus
 
@@ -41,9 +41,17 @@ Les utilisateurs doivent être capables de :
 - **JavaScript Vanille** – Script épuré (syntaxe `let` et fonctions classiques pour débutant) axé sur l'accessibilité ARIA.
 
 ### Ce que j'ai appris
+J'ai appris comment un menu mobile qui respecte les normes WCAG ressemble. 
+J'ai aussi appris de nouvelles façons d'utiliser le flexbox.
+
+Je me suis surtout reppelé comment le html et le css doivent être incorporés. 
 
 ### Développement continu
 
 Pour mes prochains projets, je souhaite approfondir :
+- Trouver des facons plus simple de placer les éléments,
+- Être capable de simplifier et épurer mon HTML et CSS,
+- De comprendre mieux commend utiliser les aria-labels, et les autres éléments qui aide à l'accessibilité.
 
 ## Auteur
+Claudie Langlais (2239635@csfoy.ca) 
