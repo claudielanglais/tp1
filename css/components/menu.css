@@ -2,48 +2,48 @@
 
 @layer components {
   /* 1. ARCHITECTURE DESKTOP */
-  /* .nav-menu {
-    --nav-bg: #ffffff;
-    --nav-text: #020263;
-    --nav-accent: #0066cc;
-    --nav-focus-ring: #ffbf00;
+  .nav-menu {
+    --nav-bg: var(--couleur-noire);
+    --nav-text: #bbbbbb;
+    --nav-accent: var(--couleur-bleu);
+    --nav-focus-ring: var(--couleur-bleu);
 
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--nav-bg);
     padding: 1rem 2rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
 
-    .nav-menu__list {
+    /* .nav-menu__list {
       display: flex;
       gap: 2rem;
       list-style: none;
       margin: 0;
       padding: 0;
-    }
+    } */
 
     .nav-menu__link {
-      color: var(--nav-text);
+      /* color: var(--nav-text);
       text-decoration: none;
       font-weight: 500;
       padding: 0.5rem 0.25rem;
-      border-bottom: 2px solid transparent;
+      border-bottom: 2px solid transparent; */
       transition:
         color 0.25s ease,
         border-color 0.25s ease;
 
-      &:hover {
+      /* &:hover {
         color: var(--nav-accent);
         border-color: var(--nav-accent);
-      }
+      } */
 
       /* WCAG Accessibilité : Indicateur de focus clavier personnalisé et très visible */
-      /* &:focus-visible {
+      &:focus-visible {
         outline: 3px solid var(--nav-focus-ring);
         outline-offset: 2px;
         color: var(--nav-accent);
-      } */
+      }
     } 
 
     /* Le bouton de contrôle (Masqué sur grand écran) */
@@ -80,7 +80,7 @@
       position: relative;
       width: 20px;
       height: 2px;
-      background-color: currentColor;
+      background-color: white;
       transition: background-color 0.2s ease;
 
       &::before,
@@ -90,7 +90,7 @@
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: currentColor;
+        background-color: white;
         transition:
           transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
           top 0.25s ease;
@@ -124,13 +124,14 @@
   }
 
   /* 3. CONFIGURATION RESPONSIVE ET MOBILE */
-  @media (width < 768px) {
+  @media (width < 930px) {
     .nav-menu {
       position: relative;
+      padding-right: 2rem;
 
       .nav-menu__toggle {
         display: inline-flex; /* Devient visible sur écran mobile */
-        z-index: 100;
+        /* z-index: 100; */
       }
 
       /* Menu déroulant sur mobile */
